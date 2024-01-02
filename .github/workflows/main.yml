@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: actions/checkout@latest
+      - uses: actions/checkout
         name: Checkout
-      - uses: '../action.yml'
+      - uses: './action.yml'
         name: Hello world action step
         id: hello
         with:
